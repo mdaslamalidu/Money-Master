@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master Project</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .money-master{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 30px;
+        }
+        .income-section{
+            text-align: center;
+            background-color: gainsboro;
+            padding: 0px 10px;
+        }
+        .money-section{
+            background-color: gainsboro;
+        
+        }
+        button{
+            background-color: lightseagreen;
+            padding: 12px 40px;
+            border: none;
+        }
+        input{
+            padding: 10px 10px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container money-master">
+            <div class="money-section"><h2>Money Master Project</h2> </div>
+            <div class="income-section">
+                <h2>Income</h2>
+                <h3>Income: <input id="income" type="number" placeholder="10000"></h3>
+
+                <h2>Expense</h2>
+                <h3>Food: <input id="food-cast" type="number" placeholder="3000"></h3>
+                <h3>Rent: <input id="rent-cast" type="number" placeholder="2000"></h3>
+                <h3>Cloths: <input id="cloth-cast" type="number" placeholder="500"></h3>
+                <button id="calculate-btn">Calculate</button>
+
+                <h2>Total Expense: <span id="expense">5500</span></h2>
+                <h2>Balance: <span id="balance">4500</span></h2>
+
+                <h3>Save: <input id="percantage" type="number" placeholder="20%"> 20%</h3>
+                <button id="save-btn">Save</button>
+
+                <h2>Saving Amount: <span id="save-amount">2000</span></h2>
+                <h2>Remaining Balance: <span id="remaining-amount">2500</span></h2>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
